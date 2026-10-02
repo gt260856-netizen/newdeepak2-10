@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trade With Deepak | Free Stock Market Learning</title>
+<meta name="description" content="Learn stock market basics in simple English with Trade With Deepak. Educational content only.">
+<meta name="theme-color" content="#120e22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '881904988338127');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=881904988338127&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  /* Theme: LILAC DUSK — deep violet-black, soft lilac accent, mint detail; headline first, author line under it */
+  :root{
+    color-scheme:dark;
+    --bg:#120e22; --panel:rgba(34,27,62,.55); --edge:rgba(182,156,255,.24);
+    --text:#f3f0ff; --muted:#aaa3c9; --soft:#d8d3ef;
+    --lilac:#b69cff; --lilac-d:#a085f5; --mint:#8be0c9;
+    --en:"Sora",-apple-system,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--en);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;
+       min-height:100vh;overflow-x:hidden;
+       background-image:radial-gradient(ellipse 80% 45% at 100% 0%,rgba(182,156,255,.13),transparent 70%)}
+
+  .wrap{max-width:430px;margin:0 auto;padding:calc(22px + env(safe-area-inset-top)) 16px calc(22px + env(safe-area-inset-bottom));
+        display:flex;flex-direction:column;gap:12px}
+  .glass{background:var(--panel);border:1px solid var(--edge);border-radius:20px;
+         -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+
+  .card{padding:24px 18px 20px}
+  .kicker{font-size:11px;font-weight:700;letter-spacing:1.4px;color:var(--mint);text-transform:uppercase}
+  h1{margin-top:10px;font-size:25px;line-height:1.3;font-weight:800;text-wrap:balance;letter-spacing:-.3px}
+  .sub{margin-top:8px;font-size:14px;color:var(--soft)}
+
+  .by{display:flex;align-items:center;gap:11px;margin-top:16px;padding:10px 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+  .av{width:42px;height:42px;border-radius:50%;position:relative;overflow:hidden;flex:0 0 auto;display:grid;place-items:center;
+      background:#241c44;border:1.5px solid var(--lilac);font-weight:800;font-size:14px;color:var(--lilac)}
+  .av img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .by b{display:block;font-size:15px;line-height:1.25}
+  .by small{display:block;font-size:12px;color:var(--muted)}
+
+  .topics{list-style:none;margin-top:14px}
+  .topics li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;font-size:14px;color:var(--soft)}
+  .topics li+li{border-top:1px dashed rgba(255,255,255,.08)}
+  .topics svg{flex:0 0 auto;margin-top:3px}
+
+  .cta{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;margin-top:18px;padding:15px 14px;border-radius:16px;
+       text-decoration:none;color:#120e22;font-weight:800;font-size:17px;line-height:1.3;background:var(--lilac);
+       box-shadow:0 6px 18px rgba(182,156,255,.25);transition:transform .15s,background .15s}
+  .cta:hover{background:var(--lilac-d)}
+  .cta:active{transform:scale(.97)}
+  .cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
+
+  .timer{display:flex;align-items:center;gap:11px;margin-top:14px;font-size:13px;color:var(--soft)}
+  .ring{width:40px;height:40px;position:relative;flex:0 0 auto}
+  .ring svg{transform:rotate(-90deg)}
+  .ring .bg{stroke:rgba(255,255,255,.1)}
+  .ring .fg{stroke:var(--lilac);stroke-linecap:round;transition:stroke-dashoffset 1s linear}
+  .ring b{position:absolute;inset:0;display:grid;place-items:center;font-weight:800;font-size:15px;color:var(--lilac)}
+  .free{margin-top:10px;font-size:12px;color:var(--muted)}
+
+  .disc{padding:12px 14px;font-size:11px;line-height:1.7;color:var(--soft);border-radius:14px;border-color:rgba(139,224,201,.25);background:rgba(139,224,201,.04)}
+  .disc b{color:var(--mint)}
+  .foot{text-align:center;font-size:11px;line-height:1.6;color:var(--muted);padding:2px 6px}
+  .foot a{color:var(--muted)}
+
+  @media(prefers-reduced-motion:reduce){.ring .fg{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <main class="card glass">
+    <span class="kicker">Free learning channel</span>
+    <h1>Make sense of the stock market, one simple lesson at a time</h1>
+    <p class="sub">Clear explanations for beginners. No jargon, no pressure.</p>
+
+    <div class="by">
+      <div class="av"><img src="https://github.com/gt260856-netizen/deepakimage/releases/download/jk/dddepk.jpg" alt="Trade With Deepak" width="42" height="42" fetchpriority="high" onerror="this.remove()">TD</div>
+      <div><b>Trade With Deepak</b><small>Stock market education</small></div>
+    </div>
+
+    <ul class="topics">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8be0c9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>How NSE, BSE and indices like Nifty work</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8be0c9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Reading a price chart step by step</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8be0c9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg>Position sizing and stop-loss basics</li>
+    </ul>
+
+    <a href="#" class="cta js-cta">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="#120e22" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.14-3.06-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+      Join Free Telegram Channel
+    </a>
+
+    <div class="timer js-timer-line">
+      <div class="ring">
+        <svg width="40" height="40" viewBox="0 0 44 44">
+          <circle class="bg" cx="22" cy="22" r="19" fill="none" stroke-width="4"/>
+          <circle class="fg js-ring" cx="22" cy="22" r="19" fill="none" stroke-width="4" stroke-dasharray="119.4" stroke-dashoffset="0"/>
+        </svg>
+        <b class="js-timer">8</b>
+      </div>
+      <div>Channel opens automatically in a few seconds</div>
+    </div>
+    <p class="free">100% Free • No payment • Leave anytime</p>
+  </main>
+
+  <div class="disc glass">
+    <p><b>Disclaimer:</b> All content is for educational purposes only and is not investment advice or a buy/sell recommendation. We are not SEBI-registered advisors. Trading involves risk, including loss of capital. Past performance does not guarantee future results.</p>
+  </div>
+
+  <div class="foot">
+    © <span id="yr"></span> Trade With Deepak • <a href="#">Privacy Policy</a> • <a href="#">Terms</a><br>
+    This site is not a part of the Facebook website or Meta Platforms, Inc.
+  </div>
+</div>
+
+<script>
+(function () {
+  // ================= SETTINGS =================
+  var TG_LINK = "https://t.me/+PPgagYDf41kxMDg1";
+  var AUTO_REDIRECT = true;   // false = sirf button se Telegram khulega
+  var TIMER_SECONDS = 8;
+  var RETURN_DELAY_MS = 300;  // dobara aane wale ko kitni jaldi bhejna hai
+  // ============================================
+
+  var KEY_VISITED = "rtt_visited", KEY_EVT = "rtt_sub";
+  var loadTime = Date.now();
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  function setFlag(k){
+    try{localStorage.setItem(k,"1")}catch(e){}
+    document.cookie = k+"=1; max-age="+(60*60*24*180)+"; path=/; SameSite=Lax";
+  }
+  function hasFlag(k){
+    try{ if(localStorage.getItem(k)) return true }catch(e){}
+    return document.cookie.indexOf(k+"=1") !== -1;
+  }
+  function goTelegram(){ setFlag(KEY_VISITED); window.location.href = TG_LINK; }
+
+  // TEST MODE: URL ke end me ?test lagao -> purane flags mit jayenge, har baar page normal khulega
+  if (/[?&]test\b/.test(location.search)) {
+    [KEY_VISITED, KEY_EVT].forEach(function(k){
+      try{localStorage.removeItem(k)}catch(e){}
+      document.cookie = k+"=; max-age=0; path=/; SameSite=Lax";
+    });
+  }
+
+  // Human interaction check: touch / scroll / mouse / keyboard
+  var interacted = false;
+  function markHuman(e){ if (e && e.isTrusted === false) return; interacted = true; }
+  ["pointerdown","touchstart","mousemove","keydown","wheel"].forEach(function(ev){
+    window.addEventListener(ev, markHuman, {passive:true, capture:true});
+  });
+  window.addEventListener("scroll", markHuman, {passive:true});
+
+  // Subscribe: sirf asli click, sirf ek baar, bot filter
+  function fireEventOnce(e){
+    if (hasFlag(KEY_EVT)) return;
+    if (navigator.webdriver) return;
+    if (Date.now() - loadTime < 800) return;
+    if (e && e.isTrusted === false) return;
+    if (!interacted) return;
+    if (typeof fbq === "function") fbq("track","Subscribe",{},{eventID:"rtt_sub_"+loadTime});
+    setFlag(KEY_EVT);
+  }
+
+  var cta = document.querySelector(".js-cta");
+  var timerLine = document.querySelector(".js-timer-line");
+  var timerEl = document.querySelector(".js-timer");
+  var ring = document.querySelector(".js-ring");
+  var C = 119.4, countdown;
+
+  cta.href = TG_LINK;
+  cta.addEventListener("click", function(e){
+    e.preventDefault();
+    if (countdown) clearInterval(countdown);
+    fireEventOnce(e);
+    setTimeout(goTelegram, 300);
+  });
+
+  // Returning visitor: timer skip, turant Telegram, event nahi
+  if (hasFlag(KEY_VISITED)) {
+    timerLine.innerHTML = "<div>Opening channel…</div>";
+    setTimeout(goTelegram, RETURN_DELAY_MS);
+    return;
+  }
+
+  if (!AUTO_REDIRECT) { timerLine.style.display = "none"; return; }
+  var left = TIMER_SECONDS;
+  function paint(){
+    timerEl.textContent = left;
+    ring.style.strokeDashoffset = (C * (1 - left / TIMER_SECONDS)).toFixed(1);
+  }
+  paint();
+  countdown = setInterval(function(){
+    left--; paint();
+    if (left <= 0){ clearInterval(countdown); goTelegram(); }
+  }, 1000);
+})();
+</script>
+</body>
+</html>
